@@ -1,0 +1,22 @@
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .formcol {
+        background-color: aqua;
+        display: flex;
+    }
+
+    .formcontent {
+
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+
+}
