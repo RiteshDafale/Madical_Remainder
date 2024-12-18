@@ -1,6 +1,17 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import { useLocation } from 'react-router-dom'
 
 function Home() {
+    const location = useLocation();
+
+    const {username} = location.state || {}
+
+    useEffect(() => {
+        console.log("username = ",username);       
+    }, [])
+    
+    
+    
     return (
         <div>
             <div className="container  mt-5">
@@ -9,7 +20,7 @@ function Home() {
                         <button className='btn btn-primary'>Add New Patient</button>
                     </div>
                     <div className="col-lg-6 col-sm-6">
-                        <button className='btn btn-primary'>Username</button>
+                        <button className='btn btn-primary'>{username}</button>
                         <button className='btn btn-primary mx-2'>Patient Details</button>
                     </div>
                 </div>
