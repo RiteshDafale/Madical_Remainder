@@ -3,20 +3,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: #eaf4f4; */
+    /* background-color:  #f4f4f4; */
+    background-color:  #eaeef3;
+}
+.formcontent{
+    /* background-color: #e76f51; */
+    /* background-color: #d3d3d3; */
+}
+.btn-custome{
+    /* background-color:  #f4a261; */
+    background-color:  #f7f9fc;
+}
+.rightcontent{
+    /* background-color:  #e9c46a; */
+    background-color:   #a9a9a9c1;
+}
+.rightcontent p{
+    color: #555555;
+}
+.rightcontent h5{
+    color:#2c3e50
 }
 
 @media only screen and (max-width: 600px) {
-
     .formcol {
-        background-color: aqua;
         display: flex;
     }
-
     .formcontent {
-
         display: flex;
         width: 100vw;
         height: 100vh;
     }
-
 }

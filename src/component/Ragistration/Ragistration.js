@@ -3,6 +3,7 @@ import './Ragistration.css';
 import '../Login/Login.css';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
+import { toast } from 'react-toastify';
 
 export default function Ragistration() {
     const [userdata, setuserdata] = useState({});
@@ -11,14 +12,24 @@ export default function Ragistration() {
     const navigate = useNavigate();
 
     const sentData = (data)=>{
-        alert("function called")
        axios.post("http://localhost:1000/ragister",data).then
-       ((Response)=>{
-        console.log("Data Successfully sent to database");
-        navigate("/PortfolioRD")
-        console.log("response = ",Response);        
+       ((Response)=>{     
+        toast.success(`🎉 Hi ${userdata.firstname}, you’re all set! Welcome aboard!`, {
+            position: "top-center",
+            autoClose:2500,
+            hideProgressBar: true,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: 0,
+            theme: "colored",
+            className: "toast-message",
+           
+        });
+        navigate("/PortfolioRD")     
        })
        .catch((error)=>{
+        toast.error("Some issue")
         console.log("Some issue with error = ",error);        
        })        
     }
@@ -33,10 +44,12 @@ export default function Ragistration() {
             ...userdata,
             role: e.target.value
         })
-        console.log("selected value = ",e.target.value);
-        
+        console.log("selected value = ",e.target.value);       
     }
 
+      useEffect(() => {
+       document.title="Ragistration  Section "
+      }, [])
     return (
         <div className='main startdiv '>
 
