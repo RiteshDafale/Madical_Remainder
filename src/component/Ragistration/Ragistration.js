@@ -26,7 +26,7 @@ export default function Ragistration() {
             className: "toast-message",
            
         });
-        navigate("/PortfolioRD")     
+        navigate("/Madical_Remainder")     
        })
        .catch((error)=>{
         toast.error("Some issue")
@@ -145,7 +145,7 @@ export default function Ragistration() {
                         <p className='mt-2 text-white'>Already Ragister  <a type='button' className="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-white"
                             onClick={(e) => {
                                 console.log("button clicked");
-                                navigate("/PortfolioRD")
+                                navigate("/Madical_Remainder")
                             }}
                         >Login here</a></p>
                     </div>

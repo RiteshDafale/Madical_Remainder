@@ -28,7 +28,8 @@ function App() {
         theme="colored"
         />
      <Routes>
-        <Route path='/PortfolioRD' element={<Login />} />
+        {/* <Route path='/PortfolioRD' element={<Login />} /> */}
+        <Route path='/Madical_Remainder' element={<Login />} />
         <Route path='/ragister' element={<Ragistration />} />
         <Route path= "/admin" element ={<Admin/>}/>  
 
