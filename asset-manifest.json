@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/PortfolioRD/static/css/main.c424f1d8.css",
-    "main.js": "/PortfolioRD/static/js/main.a23cf62f.js",
-    "static/js/488.a3e92cc8.chunk.js": "/PortfolioRD/static/js/488.a3e92cc8.chunk.js",
-    "static/media/logo.svg": "/PortfolioRD/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/PortfolioRD/index.html",
-    "main.c424f1d8.css.map": "/PortfolioRD/static/css/main.c424f1d8.css.map",
-    "main.a23cf62f.js.map": "/PortfolioRD/static/js/main.a23cf62f.js.map",
-    "488.a3e92cc8.chunk.js.map": "/PortfolioRD/static/js/488.a3e92cc8.chunk.js.map"
+    "main.css": "/Madical_Remainder/static/css/main.c424f1d8.css",
+    "main.js": "/Madical_Remainder/static/js/main.1887e5fc.js",
+    "static/js/488.a3e92cc8.chunk.js": "/Madical_Remainder/static/js/488.a3e92cc8.chunk.js",
+    "static/media/logo.svg": "/Madical_Remainder/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Madical_Remainder/index.html",
+    "main.c424f1d8.css.map": "/Madical_Remainder/static/css/main.c424f1d8.css.map",
+    "main.1887e5fc.js.map": "/Madical_Remainder/static/js/main.1887e5fc.js.map",
+    "488.a3e92cc8.chunk.js.map": "/Madical_Remainder/static/js/488.a3e92cc8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c424f1d8.css",
-    "static/js/main.a23cf62f.js"
+    "static/js/main.1887e5fc.js"
   ]
 }
