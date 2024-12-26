@@ -46,12 +46,12 @@ function Home() {
                     <div className="col-lg-6 col-sm-6 d-flex justify-content-center ">
                         <button className='btn btn-primary mx-2'
                             onClick={(e) => {
-                                if (role == "Admin") {
+                                // if (role == "Admin") {
                                     navigate("/admin")
-                                }
-                                else {
-                                    alert("Admins are only allowed to access Patient Data")
-                                }
+                                // }
+                                // else {
+                                //     alert("Admins are only allowed to access Patient Data")
+                                // }
                             }}
 
                         >Patient Details (Admin)</button>
