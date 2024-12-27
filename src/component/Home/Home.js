@@ -19,8 +19,6 @@ function Home() {
                 console.log("data not fetch from server ", error);
 
             })
-
-
     }
 
     useEffect(() => {
@@ -32,8 +30,8 @@ function Home() {
     return (
         <div>
             <div className="container-fluid  mt-5">
-                <div className="row ">
-                <div className=" container-fluid col-lg-6 col-sm-6 d-flex justify-content-center ">
+                <div className="row  ">
+                <div className=" container-fluid col-lg-6 col-sm-6 d-flex firstcol justify-content-center">
                         <div className="leftbtn  d-flex ">
                             <button className='btn btn-primary' data-bs-toggle="collapse" href="#collapseExample" role="button"
                                 onClick={() => {
@@ -43,7 +41,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className="col-lg-6 col-sm-6 d-flex justify-content-center ">
+                    <div className="col-lg-6 col-sm-6 d-flex secondcol justify-content-center ">
                         <button className='btn btn-primary mx-2'
                             onClick={(e) => {
                                 // if (role == "Admin") {
@@ -58,10 +56,10 @@ function Home() {
                         <button className='btn btn-outline-primary'>{username}</button>
                     </div>
                 </div>
-                <div className='d-flex flex-wrap mt-5 '>
+                <div className='d-flex detailsdiv flex-wrap mt-5 '>
                     {serverData.length > 0 ? (
                         serverData.map((item, index) => (
-                            <div className="card m-2" style={{ width: "18rem" }} key={index}>
+                            <div className="card remainderDetails m-2  "  key={index}>
                                 <div className="card-body">
                                     <p>Medicine Name: {item.medicineName}</p>
                                     <p>Medicine ID: {item.Medicine_id}</p>

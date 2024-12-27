@@ -27,3 +27,10 @@ table tr td{
     color:white;
     background-color: #C82333;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .btnrow{
+       display: flex;
+    }
+}

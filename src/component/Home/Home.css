@@ -1,12 +1,44 @@
-.display{
+.display {
     position: absolute;
     top: 206px;
 }
 
+.remainderDetails {
+    /* width: 18rem; */
+}
 
 @media only screen and (max-width: 600px) {
 
+    .leftbtn {
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .firstcol {
+        /* background-color: gray; */
+        width: 50%
+    }
 
-    
+    .firstcol button {
+        height: 55px;
+    }
+
+    .secondcol {
+        /* background-color: pink; */
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secondcol button {
+        height: 55px;
+
+    }
+    .detailsdiv{
+        justify-content: center;
+        align-items: center;
+    }
 }

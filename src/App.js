@@ -34,7 +34,7 @@ function App() {
         <Route path= "/admin" element ={<Admin/>}/>  
 
         <Route path="/private" element={<Private/>}>
-        <Route path='homepage' element={<Home />} />  
+        <Route path='/private/homepage' element={<Home/>} />  
         <Route path="medicine" element={<Medicine/>}  />      
         </Route>
 

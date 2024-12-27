@@ -47,7 +47,8 @@ function Admin() {
                     <td scope="col">{item.email}</td>
                     <td scope="col">{item.contact}</td>
                     <td scope="col">{item.role}</td>
-                    <td scope="col">
+                   
+                    <td scope="col" className='btnrow'>
                       <button className='btn btn-edit mx-2 '>Edit</button>
                       <button className='btn btn-delete'
                       onClick={(e)=>{
@@ -56,7 +57,7 @@ function Admin() {
                       }}                   
                       >delete</button>
                     </td>
-
+              
                   </tr>
                 ))
               }

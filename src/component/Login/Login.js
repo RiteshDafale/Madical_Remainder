@@ -35,7 +35,10 @@ export default function Home() {
   const navigate = useNavigate();
   const handleform = (e) => {
     e.preventDefault();
+    //  console.log("function called");
+    //  console.log(logindata);   
     handledata(logindata);
+    // navigate("/private/homepage")
   }
   return (
     <div className='main'>
