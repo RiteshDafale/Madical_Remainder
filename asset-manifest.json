@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Madical_Remainder/static/css/main.c424f1d8.css",
-    "main.js": "/Madical_Remainder/static/js/main.1887e5fc.js",
+    "main.css": "/Madical_Remainder/static/css/main.959c217b.css",
+    "main.js": "/Madical_Remainder/static/js/main.0990a3d7.js",
     "static/js/488.a3e92cc8.chunk.js": "/Madical_Remainder/static/js/488.a3e92cc8.chunk.js",
     "static/media/logo.svg": "/Madical_Remainder/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Madical_Remainder/index.html",
-    "main.c424f1d8.css.map": "/Madical_Remainder/static/css/main.c424f1d8.css.map",
-    "main.1887e5fc.js.map": "/Madical_Remainder/static/js/main.1887e5fc.js.map",
+    "main.959c217b.css.map": "/Madical_Remainder/static/css/main.959c217b.css.map",
+    "main.0990a3d7.js.map": "/Madical_Remainder/static/js/main.0990a3d7.js.map",
     "488.a3e92cc8.chunk.js.map": "/Madical_Remainder/static/js/488.a3e92cc8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c424f1d8.css",
-    "static/js/main.1887e5fc.js"
+    "static/css/main.959c217b.css",
+    "static/js/main.0990a3d7.js"
   ]
 }
