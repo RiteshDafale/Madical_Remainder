@@ -16,6 +16,10 @@ function Admin() {
       })
   }
 
+  const deletItem = ()=>{
+    axios.delete("localhost:1000/deleteItem",)
+  }
+
   useEffect(() => {
     fetchData();
   }, [])

@@ -7,18 +7,25 @@ import { toast } from 'react-toastify';
 
 
 export default function Home() {
+  useEffect(() => {
+ document.title="Login Section - Madical Remainder"
+   sessionStorage.clear();
+
+  }, [])
+  
 
   const [logindata, setlogindata] = useState({});
-  const [tokan, settokan] = useState("");
 
   const handledata = (data) => {
     axios.post("http://localhost:1000/login", data).then((response) => {
-      toast.success("Login Sucessfulll")
+      toast.success("Login Sucessfulll")     
       sessionStorage.setItem("tokan",response.data.token)
+      
       navigate("/private/homepage", {
         state: {
           username: response.data.user.firstname,
           role:response.data.user.role,
+          id :response.data.user.id
         }
       })
     })
@@ -27,16 +34,9 @@ export default function Home() {
       })
 
   }
-
-  useEffect(() => {
-   document.title="Login Section "
-  }, [])
-  
   const navigate = useNavigate();
   const handleform = (e) => {
     e.preventDefault();
-    //  console.log("function called");
-    //  console.log(logindata);   
     handledata(logindata);
     // navigate("/private/homepage")
   }
@@ -57,7 +57,6 @@ export default function Home() {
                         email: e.target.value
                       })
                     }}
-
                   />
                 </div>
                 <div className=" m-3 ">
